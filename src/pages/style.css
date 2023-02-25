@@ -1,0 +1,68 @@
+:root {
+    --bs-startista: #6DC9E2;
+    --bs-startista-color-hover: #67BED5;
+    --bs-startista-box-shadow: 0px 3px 6px #00000029;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-startista {
+    color: var(--bs-startista);
+}
+
+.bg-startista {
+    background-color: var(--bs-startista);
+}
+
+.border-startista {
+    border-color: var(--bs-startista) !important;
+}
+
+.button-shadow {
+    box-shadow: var(--bs-startista-box-shadow);
+}
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+.circle-video {
+    transform: translate(-30%, -70%) !important;
+    width: 400px;
+    height: 400px;
+}
+
+.yellow-circle {
+    width: 800px;
+    height: 800px;
+    background-color: #F9F289;
+}
+
+.btn-company:hover, .btn-user:hover, #signup-company:hover, #signup-user:hover {
+    border-color: var(--bs-startista-color-hover) !important;
+    background-color: var(--bs-startista-color-hover);
+    box-shadow: var(--bs-startista-box-shadow);
+    color: white;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%236DC9E2%27%3e%3cpath d=%27M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z%27/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%236DC9E2%27%3e%3cpath d=%27M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e");
+}
+
+.navbar {
+    box-shadow: var(--bs-startista-box-shadow);
+}
+
+.active {
+    color: var(--bs-startista) !important;
+}
