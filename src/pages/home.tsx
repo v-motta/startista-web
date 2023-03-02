@@ -7,6 +7,8 @@ import icon5 from "../assets/images/icon5.png";
 import celHome from "../assets/images/homeImg1.png";
 import celCarousel from "../assets/images/Celular.png";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import SectionSignup from "../components/sectionSignup";
 
 const Home = () => {
   return (
@@ -190,6 +192,12 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+      {/* texto e botões de cadastre */}
+      <SectionSignup />
+
+      {/* footer */}
+      <Footer />
     </>
   );
 };
