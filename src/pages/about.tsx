@@ -5,19 +5,18 @@ import lampImg from "../assets/images/lamp.png";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import SectionSignup from "../components/sectionSignup";
+import TitlePage from "../components/titlePage";
 
 const About = () => {
   return (
     <>
       <Navbar />
       {/* título com background */}
-      <div className="container-fluid about-title d-flex justify-content-center justify-content-lg-start align-items-end">
-        <h1 className="fw-900 text-startista title-shadow ms-0 mb-3 ms-lg-5 mb-lg-4">Quem somos</h1>
-      </div>
+      <TitlePage page="about" title="Quem somos" />
 
       {/* primeiro texto e imagem */}
       <div className="container-fluid p-2">
-        <div className="row flex-column flex-lg-row justify-content-center w-100">
+        <div className="row flex-column flex-lg-row justify-content-center w-100 m-0">
           <div className="col-12 col-lg-4 d-flex flex-column justify-content-center">
             <p className="fs-5 text-center text-lg-start">
               A Organização Mundial da Saúde (OMS) estima que existam 70 milhões de pessoas com Transtorno do Espectro Autista (TEA) em todo o mundo, sendo que 2 milhões delas no Brasil.
@@ -50,7 +49,7 @@ const About = () => {
 
       {/* segundo texto e imagem */}
       <div className="container-fluid p-2">
-        <div className="row d-flex justify-content-center w-100">
+        <div className="row d-flex justify-content-center w-100 m-0">
           <div className="col-12 col-lg-4">
             <img src={aboutImg2} alt="" width="100%" />
           </div>
@@ -63,7 +62,7 @@ const About = () => {
         </div>
       </div>
 
-      <SectionSignup />
+      <SectionSignup textCenter={false} />
 
       {/* Footer */}
       <Footer />

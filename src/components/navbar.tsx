@@ -52,10 +52,10 @@ const Navbar = () => {
           </div>
           {/* Escondido em telas mobile */}
           <div className="d-none d-lg-flex">
-            <a className="btn btn-company text-startista border border-startista border-2 rounded-pill px-4 me-0 me-lg-2 mb-2 mb-lg-0 mx-4" href={process.env.REACT_APP_LOGIN_E_BASE_URL}>
+            <a className="btn btn-hover text-startista border border-startista border-2 rounded-pill px-4 me-0 me-lg-2 mb-2 mb-lg-0 mx-4" href={process.env.REACT_APP_LOGIN_E_BASE_URL}>
               Login Empresa
             </a>
-            <a className="btn btn-user text-white border border-startista border-2 bg-startista rounded-pill px-4 mx-4" href={process.env.REACT_APP_LOGIN_C_BASE_URL}>
+            <a className="btn btn-hover text-white border border-startista border-2 bg-startista rounded-pill px-4 mx-4" href={process.env.REACT_APP_LOGIN_C_BASE_URL}>
               Login Usuário
             </a>
           </div>

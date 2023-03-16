@@ -9,13 +9,14 @@ import celCarousel from "../assets/images/Celular.png";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import SectionSignup from "../components/sectionSignup";
+import Divider from "../components/divider";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <div className="container-fluid">
-        <div className="row d-flex flex-column flex-lg-row justify-content-center align-items-center p-5 mb-3">
+        <div className="row d-flex flex-column flex-lg-row justify-content-center align-items-center p-3 p-sm-4 p-md-5 mb-3">
           {/* coluna da esquerda */}
           <div className="col-12 col-sm-10 col-md-8 col-xl-6 col-xxl-5 text-center text-xl-start mb-5 mb-xl-0">
             <h1 className="fw-900 mb-4 lh-base">
@@ -24,12 +25,8 @@ const Home = () => {
             <p className="fs-5">Não perca a chance de ter o MATCH PERFEITO!</p>
             <p className="fs-5 mb-4">Cadastre-se Agora!</p>
             <div className="d-flex flex-column flex-sm-row justify-content-center justify-content-xl-start">
-              <button id="signup-user" className="btn bg-startista text-white rounded-4 py-3 px-4 fw-bold me-0 me-sm-4 mb-3 mb-sm-0">
-                Cadastre seu currículo
-              </button>
-              <button id="signup-company" className="btn text-startista rounded-4 button-shadow py-3 px-4 fw-bold border border-opacity-10">
-                Cadastre sua empresa
-              </button>
+              <button className="btn btn-hover bg-startista text-white rounded-4 py-3 px-4 fw-bold me-0 me-sm-4 mb-3 mb-sm-0">Cadastre seu currículo</button>
+              <button className="btn btn-hover text-startista rounded-4 button-shadow py-3 px-4 fw-bold border border-opacity-10">Cadastre sua empresa</button>
             </div>
           </div>
           {/* coluna da direita */}
@@ -47,7 +44,7 @@ const Home = () => {
       {/* título e divisória */}
       <div className="container-fluid d-flex flex-column align-items-center">
         <h1 className="fw-900 mb-4 text-center">Conheça detalhes desse projeto</h1>
-        <div className="divider w-25 bg-startista py-1 mb-5"></div>
+        <Divider />
       </div>
 
       {/* container do video e o círculo azul */}
@@ -80,7 +77,7 @@ const Home = () => {
         <h1 className="fw-900 mb-4 text-center">
           Como o <span className="text-startista">Startista</span> funciona
         </h1>
-        <div className="divider w-25 bg-startista py-1 mb-5"></div>
+        <Divider />
       </div>
 
       {/* carrossel */}
@@ -194,7 +191,7 @@ const Home = () => {
       </div>
 
       {/* texto e botões de cadastre */}
-      <SectionSignup />
+      <SectionSignup textCenter={false} />
 
       {/* footer */}
       <Footer />
